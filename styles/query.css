@@ -15,6 +15,10 @@
     .header .nav-list .nav-list--button {
         font-size: 1.7vw;
     }
+
+    .main .description .contacts .input-text {
+        margin: -1.5vw 14vw;
+    }
 }
 
 @media (max-width: 450px) {
