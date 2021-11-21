@@ -1,0 +1,255 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap");
+
+* {
+    font-family: "PT Sans Narrow", sans-serif;
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+.container {
+    padding: 0 8.334%;
+}
+
+.heading {
+    font-size: 3.5vw;
+    line-height: 4.4vw;
+}
+
+.title {
+    font-size: 2.33vw;
+    line-height: 2vw;
+}
+
+.desc {
+    font-size: 1.334vw;
+    line-height: 1.8vw;
+    letter-spacing: 1.43px;
+}
+
+.button {
+    width: 13.4vw;
+    height: 4vw;
+    background: #0078BB;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1.7vw;
+    margin-right: 1.16vw;
+    gap: 0.6vw;
+}
+
+.button span{
+    flex: 1 1;
+    font-size: 1.72vw;
+    line-height: 1vw;
+    letter-spacing: 1.8px;
+    color: #fff;
+}
+
+.header {
+    width: 100%;
+    padding: 7vw 8.334% 0 8.1%;
+    display: flex;
+    justify-content: center;
+}
+
+.header svg {
+    width: 24vw;
+}
+
+.header-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.header .nav-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vw;
+}
+
+.header .nav-list .nav-list--item {
+    font-size: 1.33vw;
+    line-height: 21px;
+    letter-spacing: 1.5px;
+    color: #0078bb;
+    margin-bottom: 0.6em;
+    white-space: nowrap;
+}
+
+.header .nav-list .nav-list--button {
+    display: block;
+    padding: 0.4vw 2.4vw;
+    background: #0078bb;
+    border-radius: 4px;
+    font-size: 1.33vw;
+    line-height: 21px;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 5px;
+    letter-spacing: 1.5px;
+    text-align: center;
+}
+
+.main {
+    padding-top: 3.85vw;
+    display: flex;
+    gap: 3.5vw;
+}
+
+.main .description {
+    width: 100%;
+    flex: 5 1;
+    display: flex;
+    flex-direction: column;
+    gap: 3.3vw;
+}
+
+.main .description .box {
+    display: flex;
+    flex-direction: column;
+    gap: 0.95vw;
+}
+
+.main .description .messages {
+    gap: 1.7vw;
+}
+
+.main .description .messages textarea {
+    padding: 0.6vw 0 0 0.9vw;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    width: 55vw;
+    height: 13.4vw;
+    resize: none;
+}
+
+.main .description .messages textarea::placeholder {
+    color: #808080;
+    font-size: 1.334vw;
+    line-height: 1.8vw;
+    letter-spacing: 1.43px;
+}
+
+.main .description .options {
+    margin-top: -4px;
+    gap: 1.6vw;
+}
+
+.main .description .options .checkbox-wrapper {
+    display: flex;
+    gap: 0.75vw;
+    align-items: center;
+}
+
+.main .description .options input {
+    width: 2vw;
+    height: 2vw;
+    display: none;
+}
+
+.main .description .options  .fake-label {
+    color: #000;
+    cursor: default;
+    font-weight: normal;
+    line-height: 2.5vw;
+    vertical-align: middle;
+}
+
+.main .description .options  .fake-label:before {
+    content: " ";
+    color: cornflowerblue;
+    display: inline-block;
+    font: 1.5vw/2vw Arial;
+    position: relative;
+    text-align: center;
+    text-indent: 0px;
+    width: 1.8vw;
+    height: 1.8vw;
+    background: #FFF;
+    border: 1px solid #e3e3e3;
+    border-image: initial;
+    vertical-align: middle;
+    border-radius: 5px;
+}
+
+.main .description .options  input:checked + .fake-label:before {
+    content: "\2713";
+}
+
+.main .description .options  input:checked + .fake-label:before  {
+    background: #fff;
+    color: cornflowerblue;
+}
+
+.main .description .contacts {
+    margin-top: -4px;
+    gap: 2vw;
+}
+
+.main .description .contacts .input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.main .description .contacts .input-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main .description .contacts .input-wrapper label {
+    white-space: nowrap;
+}
+
+.main .description .contacts input {
+    width: 47.2vw;
+    height: 2.7vw;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    padding-left: 11px;
+}
+
+.main .description .contacts input::placeholder {
+    color: #808080;
+    font-size: 1.334vw;
+    line-height: 1.8vw;
+    letter-spacing: 1.43px;
+}
+
+.main .description .contacts .input-text {
+    font-size: 1.17vw;
+    line-height: 1.6vw;
+    white-space: nowrap;
+    letter-spacing: 1.33px;
+    margin: -1.5vw 8vw;
+    color: #808080;
+}
+
+.main .description .button-container {
+    display: flex;
+    padding-top: 3.2vw;
+    width: 100%;
+    justify-content: center;
+}
+
+.main .gallery {
+    flex: 2 1;
+    display: flex;
+    flex-direction: column;
+    margin: 1.35vw 1px 0 0;
+    gap: 1.7vw;
+}
+
+.main .gallery img {
+    width: 24.8vw;
+}
